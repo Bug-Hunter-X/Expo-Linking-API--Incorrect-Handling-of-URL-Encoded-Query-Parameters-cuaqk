@@ -1,0 +1,3 @@
+# Expo Linking API Bug: Handling URL-Encoded Query Parameters
+
+This repository demonstrates a bug in Expo's `Linking` API related to handling deep links with URL-encoded query parameters.  The issue occurs when a deep link includes a query parameter with a value containing reserved URL characters, causing `Linking.getInitialURL()` to return `null`.  This leads to the app failing to process the deep link properly.  The solution involves manually decoding the URL before processing it. 
